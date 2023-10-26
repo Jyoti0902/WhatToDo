@@ -13,14 +13,6 @@ export default function Header(props) {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarScroll">
-      <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-        <li className="nav-item">
-          <Link className="nav-<linkLink active" aria-current="page" to="/">Home&nbsp;</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-<linkLink" to="/about">&nbsp;About</Link>
-        </li>
-      </ul>
       {props.searchBar? <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>

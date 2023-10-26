@@ -4,7 +4,6 @@ import Header from './Mycomponents/Header';
 import Footer from './Mycomponents/Footer';
 import ToDos from './Mycomponents/ToDos';
 import React, { useState,useEffect } from 'react';
-import About from "./Mycomponents/About";
 import AddTodo from './Mycomponents/AddTodo';
 import {
   BrowserRouter as Router,
@@ -64,7 +63,7 @@ function App() {
             <ToDos todos={todos} onDelete={onDelete} />
           </>
         } />
-        <Route exact path="/about" element={<About />} />
+       
       </Routes>
       <Footer />
     </Router>
